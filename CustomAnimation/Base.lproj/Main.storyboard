@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.4823529412" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="9q5-wT-lfx" secondAttribute="centerX" id="6GG-eN-zBe"/>
                             <constraint firstAttribute="centerY" secondItem="9q5-wT-lfx" secondAttribute="centerY" id="6r9-Be-CQo"/>
@@ -61,7 +61,24 @@
                     <view key="view" contentMode="scaleToFill" id="45R-sP-Y0F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hal·le·lu·jah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ado-XC-1Ls">
+                                <rect key="frame" x="16" y="254" width="288" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zcm-ez-Evd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.4823529412" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2784313725" green="0.30980392159999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ado-XC-1Ls" secondAttribute="centerX" id="Cea-Z6-egW"/>
+                            <constraint firstItem="ado-XC-1Ls" firstAttribute="leading" secondItem="45R-sP-Y0F" secondAttribute="leading" constant="16" id="MA3-DR-Kw7"/>
+                            <constraint firstAttribute="trailing" secondItem="ado-XC-1Ls" secondAttribute="trailing" constant="16" id="aQC-Ta-aBM"/>
+                            <constraint firstAttribute="centerY" secondItem="ado-XC-1Ls" secondAttribute="centerY" id="hkN-2s-oyK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dEd-k9-BY7"/>
                 </viewController>
@@ -78,10 +95,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="delegate" destination="Zcj-e8-qDr" id="MNh-FE-TED"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="xO8-wc-eDM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tz5-qm-J3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Zcj-e8-qDr" customClass="NavigationControllerDelegate" customModule="CustomAnimation" customModuleProvider="target">
+                    <connections>
+                        <outlet property="navigationController" destination="yr2-qL-5ff" id="vi7-Y1-JYr"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-340" y="-292"/>
         </scene>

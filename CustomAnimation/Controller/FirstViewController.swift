@@ -12,7 +12,7 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "First VC"
         // Do any additional setup after loading the view.
     }
 
