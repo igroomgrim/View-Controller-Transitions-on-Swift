@@ -29,3 +29,12 @@ func panGestureAction(recognizer:UIPanGestureRecognizer){
 ```
 
 It work. Let's try. :D
+
+## Contact
+
+Anak Mirasing
+
+- https://github.com/igroomgrim
+- https://twitter.com/igroomgrim
+- http://www.igroomgrim.com/
+- thaihooligan@hotmail.com
